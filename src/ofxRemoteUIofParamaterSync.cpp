@@ -13,7 +13,7 @@
 
 void ofxRemoteUIofParamaterSync::setup(ofParameterGroup & _parameters){
 
-	ofAddListener(_parameters.parameterChangedE(), this, &ofxRemoteUIofParamaterSync::parameterChanged);
+	ofAddListener(_parameters.parameterChangedE, this, &ofxRemoteUIofParamaterSync::parameterChanged);
 	ofAddListener(RUI_GET_OF_EVENT(), this, &ofxRemoteUIofParamaterSync::remoteUIClientDidSomething);
 
 	RUI_NEW_GROUP(_parameters.getName());
